@@ -1,126 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/assets/css/style.css">
-        <title>IMC</title>
-    </head>
-    <body>
-        <nav class="menu">
-            <ul class="menu-ul">
-                <a href="#home"><li>Home</li></a>
-                <a href="#calculadora-imc"><li>Calculadora IMC</li></a>
-                <a href="#tabela"><li>Tabela IMC</li></a>
 
-            </ul>
-            <div class="icon-mobile-menu">
-                <button onclick="menuMobile()">
-                    <img class="icon" src="/assets/img/menu.svg" alt>
-                </button>
-            </div>
-        </nav>
-        <div class="menu-mobile" id="mobile-menu">
-            <ul>
-                <a href="#home"><li>Home</li></a>
-                <a href="#calculadora-imc"><li>Calculadora IMC</li></a>
-                <a href="#tabela"><li>Tabela IMC</li></a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>IMC</title>
+</head>
 
-            </ul>
-        </div>
-        <div class="container-home" id="home">
-            <header>
-                <h1 id="title"></h1>
-            </header>
-            <div class="container-h2">
-                <h2 id="subtitle"></h2>
-            </div>
-            <div class="container-sobre">
-                <p id="artigo"></p>
-            </div>
-        </div>
-        <div class="container" id="calculadora-imc">
-            <div class="title-calculadora">
-                <h2 id="calculadora-h2"></h2>
-            </div>
-            <div class="container-imc">
-                <div class="container-title">
-                    <h1>Calcular IMC</h1>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Calculadora de IMC</h1>
+        </header>
+        <main class="main">
+            <section class="calculadora">
+                <div class="descricao">
+                    <p>O Índice de Massa Corporal (IMC) é uma medida usada para avaliar se uma pessoa está em um
+                        peso saudável em relação à sua altura. É calculado dividindo o peso da pessoa em quilogramas
+                        (kg) pela altura em metros (m) elevada ao quadrado (IMC = peso / altura²).</p>
                 </div>
-                <div class="container-altura">
-                    <input type="number" id="altura"
-                        placeholder="Altura ex: 1.70">
-                </div>
-                <div class="container-peso">
-                    <input type="number" id="peso" placeholder="Peso ex: 78.2">
-                </div>
-                <div class="container-button" id="calcular">
+                <div class="calcular">
+                    <input type="number" placeholder="Digite seu peso em quilogramas (ex: 70)" id="peso">
+                    <input type="number" placeholder="Digite sua altura em metros (ex: 1.75)" id="altura">
                     <button onclick="calcular()">Calcular</button>
                 </div>
-                <div class="container-resultado">
+            </section>
+            <section class="resultado">
+                <div class="res">
+                    <h2 id="subtitulo"></h2>
                     <p id="res"></p>
+                    <p id="resultado"></p>
                 </div>
-            </div>
-        </div>
-        <div class="container-tabela" id="tabela">
-            <div class="tabela-title">
-                <h2 id="table-title"></h2>
-            </div>
-            <table>
-                <thead>
-                    <tr>
-                        <td>IMC</td>
-                        <td>Classificação</td>
-                        <td>Obesidade (GRAU)</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>MENOR QUE 18.5</td>
-                        <td>MAGREZA</td>
-                        <td>0</td>
-                    </tr>
-                </tbody>
-                <tbody>
-                    <td>ENTRE 18.5 E 24.9</td>
-                    <td>NORMAL</td>
-                    <td>0</td>
-                </tbody>
-                <tbody>
-                    <td>ENTRE 25.0 E 29.9</td>
-                    <td>SOBREPESO</td>
-                    <td>1</td>
-                </tbody>
-                <tbody>
-                    <td>ENTRE 30.0 E 39.9</td>
-                    <td>OBESIDADE</td>
-                    <td>2</td>
-                </tbody>
-                <tbody>
-                    <td>MAIOR QUE 40</td>
-                    <td>OBESIDADE GRAVE</td>
-                    <td>3</td>
-                </tbody>
-            </table>
+                <div class="tabela">
+                    <div class="indices i1">
+                        <p>Abaixo do peso: IMC menor que 18,5
+                        </p>
+                    </div>
+                    <div class="indices i2">
+                        <p>Peso normal: IMC entre 18,5 e 24,9
+                        </p>
+                    </div>
+                    <div class="indices i3">
+                        <p>Sobrepeso: IMC entre 25 e 29,9
+                        </p>
+                    </div>
+                    <div class="indices i4">
+                        <p>Obesidade: IMC 30 ou maior
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="/assets/js/scripts.js"></script>
+</body>
 
-            <div class="tabela-artigo">
-                <p class="paragrafo1"></p>
-                    <ul class="indices">
-                        <li>Abaixo do peso: IMC abaixo de 18,5</li>
-                        <li>Peso normal: IMC entre 18,5 e 24,9</li>
-                        <li>Sobrepeso: IMC entre 25 e 29,9</li>
-                        <li>Obesidade: IMC entre 30 e 39,9</li>
-                        <li>Obesidade Grave: IMC acima de 40</li>
-                    </ul>
-
-                    <p class="paragrafo2"></p>
-            </div>
-        </div>
-
-        <footer>
-            <h1>footer</h1>
-        </footer>
-
-        <script src="/assets/js/scripts.js"></script>
-    </body>
 </html>
