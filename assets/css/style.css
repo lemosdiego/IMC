@@ -11,141 +11,693 @@ body {
     overflow: hidden;
 }
 
-.container {
-    width: 100%;
-    height: 100vh;
+@media (min-width: 320px) and (max-width: 480px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header {
+        background-color: #004ca2c5;
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    .main {
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calculadora {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .descricao {
+        width: 95%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .descricao p {
+        width: 95%;
+        text-align: justify;
+    }
+
+    .calcular {
+        width: 95%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .calcular input {
+        width: 100%;
+        height: 30%;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .calcular button {
+        width: 100%;
+        height: 25%;
+        border: none;
+        border-radius: 10px;
+        background-color: #004ba2;
+        color: #fff;
+        font-size: 1.1rem;
+    }
+
+    .resultado {
+        width: 95%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .resultado h2 {
+        font-size: 1.1rem;
+        width: 95%;
+    }
+
+    #res {
+        font-size: 1.8rem;
+    }
+
+    #resultado {
+        font-size: 1.3rem;
+    }
+
+    .res {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .tabela {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        border-radius: 10px;
+    }
+
+    .indices {
+        width: 100%;
+        height: 20%;
+        border-radius: 10px;
+    }
+
+    .indices p {
+        color: #fff;
+        font-size: 0.9rem;
+        padding: 10px;
+    }
 }
 
-.header {
-    background-color: #004ca2c5;
-    width: 100%;
-    height: 20%;
-    display: flex;
-    align-items: center;
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header {
+        background-color: #004ca2c5;
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    .main {
+        width: 70%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calculadora {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .descricao {
+        width: 95%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .descricao p {
+        width: 95%;
+        text-align: justify;
+    }
+
+    .calcular {
+        width: 95%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .calcular input {
+        width: 100%;
+        height: 30%;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .calcular button {
+        width: 100%;
+        height: 25%;
+        border: none;
+        border-radius: 10px;
+        background-color: #004ba2;
+        color: #fff;
+        font-size: 1.1rem;
+    }
+
+    .resultado {
+        width: 95%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .resultado h2 {
+        font-size: 1.1rem;
+        width: 95%;
+    }
+
+    #res {
+        font-size: 1.8rem;
+    }
+
+    #resultado {
+        font-size: 1.3rem;
+    }
+
+    .res {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .tabela {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        border-radius: 10px;
+    }
+
+    .indices {
+        width: 100%;
+        height: 20%;
+        border-radius: 10px;
+    }
+
+    .indices p {
+        color: #fff;
+        font-size: 0.9rem;
+        padding: 10px;
+    }
 }
 
-.header h1 {
-    font-size: 5rem;
-    margin-left: 50px;
-    font-weight: 400;
-    color: #fff;
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header {
+        background-color: #004ca2c5;
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    .main {
+        width: 60%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calculadora {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .descricao {
+        width: 95%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .descricao p {
+        font-size: 1.2rem;
+        width: 95%;
+        text-align: justify;
+    }
+
+    .calcular {
+        width: 95%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .calcular input {
+        width: 100%;
+        height: 30%;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .calcular button {
+        width: 100%;
+        height: 25%;
+        border: none;
+        border-radius: 10px;
+        background-color: #004ba2;
+        color: #fff;
+        font-size: 1.1rem;
+    }
+
+    .resultado {
+        width: 95%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .resultado h2 {
+        font-size: 1.1rem;
+        width: 95%;
+    }
+
+    #res {
+        font-size: 1.8rem;
+    }
+
+    #resultado {
+        font-size: 1.3rem;
+    }
+
+    .res {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .tabela {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        border-radius: 10px;
+    }
+
+    .indices {
+        width: 100%;
+        height: 20%;
+        border-radius: 10px;
+    }
+
+    .indices p {
+        color: #fff;
+        font-size: 0.9rem;
+        padding: 10px;
+    }
 }
 
-.main {
-    width: 100%;
-    height: 80%;
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .header {
+        background-color: #004ca2c5;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+    }
+
+    .header h1 {
+        font-size: 4rem;
+        margin-left: 50px;
+        font-weight: 400;
+        color: #fff;
+    }
+
+    .main {
+        width: 100%;
+        height: 80%;
+    }
+
+    .calculadora {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calcular {
+        width: 90%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .calcular input {
+        border: none;
+        width: 25%;
+        height: 60px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        padding: 10px;
+        outline: none;
+    }
+
+    .calcular button {
+        border: none;
+        background-color: #004ba2;
+        color: #fff;
+        width: 20%;
+        height: 60px;
+        border-radius: 10px;
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+
+    .descricao {
+        width: 90%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .descricao p {
+        width: 73%;
+        text-align: justify;
+        font-size: 1.5rem;
+    }
+
+    .resultado {
+        background-color: #9a9a9a;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .res {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .res h2 {
+        font-size: 1.8rem;
+        font-weight: 100;
+        text-align: justify;
+    }
+
+    .res p {
+        font-size: 3.8rem;
+        font-weight: 900;
+    }
+
+    #resultado {
+        font-size: 2rem;
+    }
+
+    .tabela {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .indices {
+        width: 80%;
+        height: 20%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .indices p {
+        color: #fff;
+        padding: 10px;
+        font-size: 1.1rem;
+    }
+
 }
 
-.calculadora {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@media (min-width: 1201px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .header {
+        background-color: #004ca2c5;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+    }
+
+    .header h1 {
+        font-size: 5rem;
+        margin-left: 50px;
+        font-weight: 400;
+        color: #fff;
+    }
+
+    .main {
+        width: 100%;
+        height: 80%;
+    }
+
+    .calculadora {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calcular {
+        width: 90%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .calcular input {
+        border: none;
+        width: 25%;
+        height: 60px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        padding: 10px;
+        outline: none;
+    }
+
+    .calcular button {
+        border: none;
+        background-color: #004ba2;
+        color: #fff;
+        width: 20%;
+        height: 60px;
+        border-radius: 10px;
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+
+    .descricao {
+        width: 90%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .descricao p {
+        width: 73%;
+        text-align: justify;
+        font-size: 1.7rem;
+    }
+
+    .resultado {
+        background-color: #9a9a9a;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .res {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .res h2 {
+        font-size: 1.8rem;
+        font-weight: 100;
+        text-align: justify;
+    }
+
+    .res p {
+        font-size: 4rem;
+        font-weight: 900;
+    }
+
+    #resultado {
+        font-size: 2rem;
+    }
+
+    .tabela {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .indices {
+        width: 80%;
+        height: 20%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .indices p {
+        padding: 10px;
+        color: #fff;
+        font-size: 1.1rem;
+    }
+
+
 }
 
-.calcular {
-    width: 90%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.calcular input {
-    border: none;
-    width: 25%;
-    height: 60px;
-    border-radius: 10px;
-    font-size: 1.2rem;
-    padding: 10px;
-    outline: none;
-}
-
-.calcular button {
-    border: none;
-    background-color: #004ba2;
-    color: #fff;
-    width: 20%;
-    height: 60px;
-    border-radius: 10px;
-    font-size: 1.4rem;
-    cursor: pointer;
-}
-
-.descricao {
-    width: 90%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.descricao p {
-    width: 73%;
-    text-align: justify;
-    font-size: 1.7rem;
-    line-height: 50px;
-}
-
-.resultado {
-    background-color: #9a9a9a;
-    width: 100%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.res {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.res h2 {
-    font-size: 2rem;
-    font-weight: 100;
-    padding: 20px;
-    text-align: justify;
-}
-
-.res p {
-    font-size: 4.5rem;
-    padding: 20px;
-    font-weight: 900;
-}
-
-#resultado {
-    font-size: 2rem;
-}
-
-.tabela {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-}
-
-.indices {
-    width: 80%;
-    height: 20%;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.indices p {
-    padding: 10px;
-    color: #fff;
-    font-size: 1.1rem;
-}
 
 .i1 {
     background-color: #870085;
